@@ -16,13 +16,13 @@ const storageEncryptor = encryptTransform({
 })
 
 const persistLocalStorageConfig = {
-    key: 'root',
+    key: 'root1',
     storage:storage,
     transforms:[storageEncryptor]
 }
 
 const persistSessionStorageConfig = {
-    key: 'root',
+    key: 'root2',
     storage:storageSession,
     transforms:[storageEncryptor]
 }
